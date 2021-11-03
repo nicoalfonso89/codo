@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/c0e1c75cb9.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&family=Spartan&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <div id="marca">
+            <img src="../img/logo.png" alt="logo">
+    </div>
+    <nav id="botonera_principal">
+        <ul>
+            <li><a href="../index.html">  I N I C I O</a></li>
+            <li><a href="Nosotros.html">  N O S O T R O S  </a></li>
+            <li><a href="Servicios.html">  S E R V I C I O S  </a></li>
+            <li><a href="Contacto.html">  C O N T A C T O  </a></li>
+        </ul>
+    </nav>
+        <div id="redes">
+            <button><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></button>
+            <button><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></button>
+        </div> 
+    </header>
+
+    <section class="contenido_principal">
+        <article id=texto_presentacion>
+            <h1 id="titulo_presentacion"><i class="fas fa-envelope-open-text"></i></i> C O N T A C T O</h1>
+                Le invitamos a completar el siguiente formulario. A la brevedad nos pondremos en contacto con usted
+                para satisfacerle todas sus inquietudes. Recuerde que también puede contactarnos vía nuestras redes sociales.
+            </p>
+        </article>
+  
+            <form id="formulario" action="">
+                <div>
+                  <label for ="nombre">Nombre</label>
+                  <input type = "text" id = 'nombre'>
+                </div>
+                <div>
+                  <label for ="numero">Teléfono</label>
+                  <input type = "text" id = 'numero'>
+                </div>
+                <div>
+                  <label for = "mail">Mail</label>
+                  <input type = "email" id = 'mail'>
+                </div>
+                <div>
+                  <label for = "mensaje">Su Mensaje</label>
+                  <input type = "text" id = 'mensaje'>
+                </div>
+                <div>
+                    <input id="btn_enviar" type="submit" onclick = 'return enviarFormulario()' value="Enviar">
+                </div>         
+              </form>
+              <div id = 'error'></div>
+
+        <script src="../js/formulario.js"></script>
+</body>
+</html>
